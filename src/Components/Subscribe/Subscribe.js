@@ -6,11 +6,11 @@ const Subscribe = () => {
         <div className='max-w-screen-xl md:px-[90px] sm:px-24 px-4 m-auto'>
             <div className='flex flex-wrap justify-between md:gap-0 gap-5 items-center'>
                 <div className='md:w-[47%] w-full'>
-                    <h1 className='text-[#CB5846] text-left font-semibold text-4xl '>Doofdi Ai</h1>
+                    <h1 className='text-[#E93439] text-left font-semibold text-4xl '>Doofdi Ai</h1>
                     <p className='font-normal text-left text-base py-5'>Stay up to date on features and releases by joining our newsletter.</p>
                     <form className='text-left'>
                         <input type="email"  className='border border-[#888888] lg:w-[358px] w-full  text-base outline-none h-11'/>
-                        <button type='submit' className='w-full lg:w-auto py-3 xl:mt-0 mt-3 xl:ml-5 px-7 bg-[#CB5846] text-white font-normal text-base '>Subscribe</button>
+                        <button type='submit' className='w-full lg:w-auto py-3 xl:mt-0 mt-3 xl:ml-5 px-7 bg-[#E93439] text-white font-normal text-base '>Subscribe</button>
                     </form>
                     <p className='md:pt-16 pt-3 font-normal text-base text-left'>By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
                 </div>

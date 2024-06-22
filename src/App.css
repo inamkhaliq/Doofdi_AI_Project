@@ -36,6 +36,16 @@
     transform: rotate(360deg);
   }
 }
-.animi{
-  transition:all ease-in-out 2s !important;
+
+.select-dropwoen::after{
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  z-index: 1;
+  border-right: 1px solid #343434;
+  border-bottom: 1px solid #343434;
+  transform: rotate(45deg);
+  right: 24px;
+  bottom: 24px;
 }

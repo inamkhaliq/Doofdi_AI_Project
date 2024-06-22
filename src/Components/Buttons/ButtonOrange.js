@@ -1,4 +1,5 @@
 import React, { Children } from 'react'
+import { Link } from 'react-router-dom'
 
 const ButtonOrange = (
     {
@@ -6,7 +7,8 @@ const ButtonOrange = (
         className="",
         type="button",
         href="#",
+        ...props
     }
-) => <a  className={` bg-[#CB5846] md:text-sm font-normal rounded-[14px]   ${className}`} type={type} href={href}>{text}</a>
+) => <Link  className={`  md:text-sm font-normal rounded-[14px]   ${className}`} type={type} to={href} {...props}>{text}</Link>
 
 export default ButtonOrange

@@ -1,32 +1,25 @@
 
 import './App.css';
-import Header from './Components/Header/Header';
-import Banner from './Components/Banner/Banner';
-import Services from './Components/Services/Services';
-import EngateToEarn from './Components/EngageToEarn/EngateToEarn';
-import LeaderB from './Components/LeaderBoard/LeaderB';
-import Works from './Components/Works/Works';
-import Features from './Components/Features/Features';
-import Unlock from './Components/Unlock/Unlock';
-import Subscribe from './Components/Subscribe/Subscribe';
-import Footer from './Components/Footer/Footer';
-import Drawer from './Components/Drawer/Drawer';
+import { Route, Routes, useParams } from 'react-router-dom';
+import UserDashBoard from './Pages/UserDashBoard.js';
+import AdminDashboard from './Pages/AdminDashboard.js';
+import Home from './Pages/Home.js';
+import ChartPage from './Pages/ChartPage.js';
 
 function App() {
   return (
     <div className="App">
-      {/* <ButtonOrange text="hi"></ButtonOrange> */}
-      {/* <Drawer></Drawer> */}
-      <Header></Header>
-      <Banner></Banner>
-      <Services></Services>
-      <EngateToEarn></EngateToEarn>
-      <LeaderB></LeaderB>
-      <Works></Works>
-      <Features></Features>
-      <Unlock></Unlock>
-      <Subscribe></Subscribe>
-      <Footer></Footer>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/ChartPage' element={<ChartPage/>} />
+        <Route path='/:header' element={<Home/>} />
+        {/* <Route path='/Login' element={<LoginPage/>} />         */}
+        {/* <Route path='/SignUp' element={<SigUpPage/>} />         */}
+        <Route path='/Admin' element={<AdminDashboard/>} />        
+        <Route path='/Admin/:tool' element={<AdminDashboard/>} />        
+        <Route path='/Subscription' element={<UserDashBoard/>} />        
+        <Route path='/Subscription/:tool' element={<UserDashBoard/>} />        
+      </Routes>
     </div>
   );
 }

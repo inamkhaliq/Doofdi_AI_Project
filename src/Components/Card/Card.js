@@ -3,7 +3,7 @@ import ButtonOrange from '../Buttons/ButtonOrange'
 
 const Card = ({CardData}) => {
     return (
-        <div className='lg:w-[23.80%]  sm:w-[48%] w-full rounded-[10px] md:p-2 p-3 bg-white flex flex-col justify-start items-center gap-1'>
+        <div className='lg:w-[30%] xl:w-[23.80%]  sm:w-[48%] w-full rounded-[10px] p-3 pb-[17px] bg-white flex flex-col justify-between items-center gap-1'>
             <div className='w-full '>
                 <img className='w-full ' src={CardData.img} alt={`women on wheel`} />
             </div>
@@ -15,10 +15,9 @@ const Card = ({CardData}) => {
                     {CardData.desc}
                 </p>
                 {/* <a className='bg-[#CB5846] text-white font-normal text-base rounded-[40px]' href=""></a> */}
-                <ButtonOrange text='Get Started' className='px-9 py-2 inline-block text-[#EDECEB] text-sm font-normal rounded-[40px] drop-shadow-lg'></ButtonOrange>
+                <ButtonOrange text='Get Started' className='px-9 py-2 inline-block text-[#EDECEB] text-sm font-normal rounded-[40px] shadow-xl bg-[#CB5846]'></ButtonOrange>
             </div>
         </div>
     )
 }
-
 export default Card
